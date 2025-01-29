@@ -123,7 +123,7 @@ DROP TABLE IF EXISTS actors;
 CREATE TABLE studios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT
-)
+);
 
 CREATE TABLE movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -131,19 +131,19 @@ CREATE TABLE movies (
     year INTEGER
     MPAA_rating TEXT,
     studio_id INTEGER
-)
+);
 
 CREATE TABLE actors (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-)
+    name TEXT
+);
 
 CREATE TABLE roles (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_id INTEGER,
     actor_id INTEGER,
     actorRole TEXT
-)
+);
 
 
 -- Insert data into your database that reflects the sample data shown above
