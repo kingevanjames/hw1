@@ -191,9 +191,9 @@ INSERT INTO characters (
 ) VALUES
     ('Bruce Wayne', 1, 1),
     ('Alfred', 1, 2),
-    ("Ra's Al Ghul", 1, 3)
+    ("Ra's Al Ghul", 1, 3),
     ('Rachel Dawes', 1, 4),
-    ('Commissioner Gordon', 1, 5)
+    ('Commissioner Gordon', 1, 5),
     ('Bruce Wayne', 2, 1),
     ('Joker', 2, 6),
     ('Harvey Dent', 2, 7),
@@ -213,6 +213,10 @@ INSERT INTO characters (
 -- The SQL statement for the movies output
 -- TODO!
 
+SELECT movies.title, movies.year, movies.MPAA_rating, studios.name
+FROM movies
+INNER JOIN studios ON movies.studio_id = studios.id;
+
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
@@ -222,3 +226,5 @@ INSERT INTO characters (
 
 -- The SQL statement for the cast output
 -- TODO!
+
+SELECT
